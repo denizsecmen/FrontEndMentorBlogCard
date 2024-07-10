@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Figtree-Semibold' ;
+  src: url(../assets/fonts/static/Figtree-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'Figtree-Bold';
+  src: url('../assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+@media only screen and (max-width:375px) {
+  #card{
+    width: 80vw!important;
+  }
+}
+body{
+  padding: 0;
+  margin:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word!important;
+  word-break: break-all;
+}
+#card
+{
+  width: 20%;
+  background-color: white;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  min-height: 450px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#card > div
+{
+  width:100%;
+  font-family: 'Figtree';
+}
+#card > img
+{
+  width:100%;
+  border-radius: 10px;
+}
+#card > #type
+{
+    background-color: hsl(47, 88%, 63%);
+    width: 80px;
+    height: 40px;
+    padding:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Figtree-Bold';
+}
+#card > #date
+{
+  font-family: 'Figtree-SemiBold';
+}
+#card > #title
+{
+  font-family: 'Figtree-Bold';
+  font-size: larger;
+}
+#card > #title:hover{
+  color: hsl(47, 88%, 63%);
+}
+#card >#content
+{
+ color: hsl(0, 0%, 50%);
+}
+#card >#creator{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#card > #creator > img{
+  width: 45px;
+  height: 45px;
+}
+#card > #creator > span{
+  margin-left:15px;
+  font-family: 'Figtree-Bold';
+}
